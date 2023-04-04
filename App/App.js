@@ -8,13 +8,15 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.imageContainer}>
         <ImageBackground source={image} resizeMode="cover" style={styles.image}>
-        <Image style={{ marginTop:100, width:400, height:400, alignSelf:"center"}} source=
+        <Image style={{ marginTop:50, width:300, height:300, alignSelf:"center"}} source=
         {require('./assets/images/hiphop2020.png')}/>
-        <Text style={styles.text}>Four Four Beat Labs</Text>
+        <Text style={styles.titleText}>Four Four Beat Labs</Text>
+        <Text style={styles.baseText}>Redesigning the classroom experience</Text>
       </ImageBackground>
       </View>
       <View style={styles.footerContainer}>
-        <Button theme="primary" label= " Get Started" />
+        <Button titleStyle={{
+        }}theme="primary" style={styles.baseText} label= " Let's start" />
       </View>
       <StatusBar style="auto" />
     </View>
@@ -37,10 +39,20 @@ const styles = StyleSheet.create({
     height: 900,
     borderRadius: 18,
   },
-  text: {
+  titleText: {
     color: 'white',
     fontSize: 30,
     lineHeight: 84,
+    fontWeight: 'bold',
+    fontFamily: 'Rockwell',
+    fontStyle: 'italic',
+    textAlign: 'center',
+    backgroundColor: '#000000c0',
+  },
+  baseText: {
+    color: 'white',
+    fontSize: 14,
+    lineHeight: 15,
     fontWeight: 'bold',
     fontFamily: 'Rockwell',
     fontStyle: 'italic',
