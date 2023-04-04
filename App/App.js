@@ -14,7 +14,7 @@ export default function App() {
       </ImageBackground>
       </View>
       <View style={styles.footerContainer}>
-        <Button theme="primary" label= " Get Start" />
+        <Button theme="primary" label= " Get Started" />
       </View>
       <StatusBar style="auto" />
     </View>
